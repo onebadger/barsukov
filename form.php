@@ -33,7 +33,7 @@ if(isset($_POST['email'])) {
   <body>
     <div id="hohoho">
       <p class="text-white" for="exampleInputEmail1">спасибо пожалуйста!</p>
-      <form action="http://barsukov.ru/"><button type="submit" class="btn btn-success">back</button></form>
+      <form action="http://barsukova.ru/"><button type="submit" class="btn btn-secondary">back</button></form>
     </div>
   </body>
 </html>
