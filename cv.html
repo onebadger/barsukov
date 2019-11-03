@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>barsukov</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	<style>
+		body {
+			/*			background-color: #296CA0;*/
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			font-family: 'Roboto', sans-serif;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		#hohoho {
+			text-align: center;
+			width: 280px;
+			position: absolute;
+			top: calc(35%);
+			left: calc(50% - 140px);
+		}
+
+		form input {
+			margin-bottom: 12px;
+		}
+
+		a {
+			color: black;
+			text-decoration: underline;
+		}
+		
+		a:hover {
+			color: firebrick;
+		}
+
+		.header {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			margin: 40px 0 30px;
+		}
+
+		.head-icon {
+			height: 63px;
+			width: 63px;
+			background: url(ico2.png) no-repeat;
+			background-size: 55px 63px;
+		}
+
+		h1 {
+			align-self: center;
+			margin: 0;
+			margin-left: 20px;
+		}
+
+		.subtitle {
+			font-weight: 200;
+			font-size: 20px;
+			margin-bottom: 70px
+		}
+
+		.position-item {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 30px;
+		}
+
+		.position-item:last-child {
+			margin-bottom: 0;
+		}
+
+		/*
+		.positions-title,
+		.skills-title,
+		.education-title,
+		.languages-title,
+		.qualities-title,
+		.other-title {
+			font-size: 20px;
+			color: #777;
+			margin-bottom: 40px;
+			text-transform: uppercase;
+		}
+*/
+
+		.position-info {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			margin-bottom: 10px;
+		}
+
+		.position-title {
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		.position-place {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.position-name {
+			align-self: flex-end;
+		}
+
+		.position-period {
+			align-self: flex-end;
+			font-weight: 200;
+			font-size: 16px;
+		}
+
+		.position-details {
+			font-size: 18px;
+			font-weight: 200;
+		}
+
+		@media (max-width: 600px) {
+			.position-info {
+				flex-direction: column;
+			}
+			
+			.position-name,
+			.position-period {
+				align-self: flex-start;
+			}
+		}
+
+	</style>
+	<div id="cv">
+		<div class="header">
+			<div class="head-icon"></div>
+			<h1>Яков Барсуков</h1>
+		</div>
+
+		<p class="subtitle">Привет. Я занимаюсь веб-разработкой. Работаю в финансовой сфере. Имею опыт управления проектами.</p>
+		<div class="positions">
+			<!--			<div class="positions-title">#Опыт работы</div>-->
+
+			<div class="position-item">
+				<div class="position-info">
+					<div class="position-title">Frontend разработчик</div>
+					<div class="position-place">
+						<div class="position-name"><a href="https://www.uralsib.ru" target="_blank">Банк УРАЛСИБ</a></div>
+						<div class="position-period">10.2017&nbsp;&#8209;&nbsp;11.2019</div>
+					</div>
+				</div>
+				<div class="position-details">Веб разработка в клиентской части сайта банка. Верстка и программирование в связке с back-end. Разработка, доработка, интегрирование сервисов. Верстка страниц, лендингов, управление контентом. Тестирование. Прямым бизнес заказчиком выступает Малый и Корпоративный бизнес банка.
+				</div>
+			</div>
+
+			<div class="position-item">
+				<div class="position-info">
+					<div class="position-title">Frontend разработчик</div>
+					<div class="position-place">
+						<div class="position-name"><a href="https://github.com/onebadger" target="_blank">Фриланс</a></div>
+						<div class="position-period">11.2015&nbsp;&#8209;&nbsp;09.2017</div>
+					</div>
+				</div>
+				<div class="position-details">Верстка одностраничников, легких сайтов на заказ. Изучение программирования на JavaScript. Примеры работ: <a href="http://www.matlina.ru" target="_blank">matlina.ru</a>, <a href="https://www.onebadger.ru" target="_blank">onebadger.ru</a>, <a href="http://www.badger.one" target="_blank">badger.one</a>
+				</div>
+			</div>
+
+			<div class="position-item">
+				<div class="position-info">
+					<div class="position-title">Руководитель проекта</div>
+					<div class="position-place">
+						<div class="position-name"><a href="https://www.kliniki.pro/" target="_blank">КлиникиПро</a></div>
+						<div class="position-period">04.2012&nbsp;&#8209;&nbsp;10.2015</div>
+					</div>
+				</div>
+				<div class="position-details">Запуск интернет проекта с нуля. Стратегическое развитие. Разработка концепции и структуры проекта. Разработка сервисов. Управление командой разработки. Подготовка контента для информационного и графического наполнения сайта. Планирование и контроль выполнения бюджета.
+				</div>
+			</div>
+
+			<div class="position-item">
+				<div class="position-info">
+					<div class="position-title">Маркетинг менеджер</div>
+					<div class="position-place">
+						<div class="position-name"><a href="https://www.osram.com/" target="_blank">OSRAM</a></div>
+						<div class="position-period">04.2009&nbsp;&#8209;&nbsp;11.2011</div>
+					</div>
+				</div>
+				<div class="position-details">Формирование, реализация и контроль выполнения медиа-плана. Ведение международных маркетинг-проектах. Управление и поддержка российского сегмента сайта компании. Разработка, перевод, адаптация контента. Подготовка, проведение и анализ эффективности рекламных кампаний. Исследование рынка.
+				</div>
+			</div>
+
+			<div class="position-item">
+				<div class="position-info">
+					<div class="position-title">Медиа байер</div>
+					<div class="position-place">
+						<div class="position-name">Медиапро</div>
+						<div class="position-period">09.2005&nbsp;&#8209;&nbsp;09.2008</div>
+					</div>
+				</div>
+				<div class="position-details">Закупка медиа носителей в России и СНГ. Определение эффективных каналов продвижения продукции. Подготовка, реализация и контроль выполнения медиа-плана рекламных кампаний. Контроль расходов. Оценка эффективности размещения рекламных кампаний. Мониторинг рынка. Документооборот. Ведение ключевых клиентов агентства: Билайн, Nokia, Peugeot, Банк Русский Стандарт.
+				</div>
+			</div>
+
+			<div class="position-item">
+				<div class="position-info">
+					<div class="position-title">Экономист</div>
+					<div class="position-place">
+						<div class="position-name">Южное Агентство Печати</div>
+						<div class="position-period">10.1999&nbsp;&#8209;&nbsp;07.2005</div>
+					</div>
+				</div>
+				<div class="position-details">Анализ и контроль работы розничных торговых точек. Разработка и успешное применение методов оптимизации продаж. Обучение и координация работы персонала. Аналитика эффективности применяемых методов. Разработка и внедрение программ обработки данных для контроля товарооборота, прогноза дохода, статистики.
+				</div>
+			</div>
+
+		</div>
+		<div class="key-skills">
+			<div class="skills-title">#Ключевые навыки</div>
+			Адаптивной верстка. Чисты понятный код. Разработка с учетом семантического значения. Бизнес подход к разработке. Командная работы. Быстро осваиваю новые технологии. Умею оценивать объем и сроки работ.
+			<div><br>Стек: JavaScript, HTML, CSS, Git, Bitrix, Wordpress.
+				<br>Знание jQuery, Flexbox, Sass, Bootstrap. Понимание PHP.
+				<br>Опыт командной разработки с использованием GitLab, Jira, Confluence.
+				<br>Графические редакторы Photoshop, Illustrator.
+				<br><br> Напрямую работаю с бизнес командой. <br>
+				<br>Последние реализованные проекты:
+				qvant.ru/newsite, matlina.ru<br>
+				
+
+				<br>
+				Опыт координирования работы сотрудников отдела разработки. Знание современных Интернет технологий и рекламных форматов. Сильные технические навыки, связанные с интернет-проектами.
+				
+			</div>
+		</div>
+		<div class="education">
+			<div class="education-title">#Ключевые навыки</div>
+			<div>1998 Limerick Language Centre (Ирландия): Курсы английского языка. Сертификат.<br>
+				1999 Институт повышения квалификации кадров электронной промышленности ЭЛЕКТРОНИНТОРГ, ООО (Россия): Английский для бизнесменов. Сертификат.<br>
+				2004 Европейская профессиональная психотерапевтическая лига (Киев): Эффективное управление персоналом. Сертификат.<br>
+				2011 SkillSoft (удаленно): Маркетинговые стратегии на конкурентном рынке. Сертификат.<br>
+				2011 Tom's House (Россия): Курсы английского языка. Сертификат.<br>
+				2016 Treehouse (удаленно): Курс Front end web development. teamtreehouse.com/yakovbarsukov<br>
+			</div>
+		</div>
+		<div class="languages">
+			<div class="languages-title">#Знание языков</div>
+			<div>Английский: разговорный
+			</div>
+		</div>
+		<div class="personal-qualities">
+			<div class="qualities-title">#Знание языков</div>
+			<div>Нацеленность на результат, умение руководить и работать в команде, ответственность, обучаемость, стрессоустойчивость.
+			</div>
+		</div>
+		<div class="other">
+			<div class="other-title">#Прочее</div>
+			<div>Готов к командировкам. Холост. Не курю. Занимаюсь спортом. Права категории B.
+			</div>
+		</div><br><br><br><br>
+		<div>Эл. адрес yakov.barsukov@gmail.com<br>
+			Телефон +79166677991<br>
+			Проживаю в Москве. м Семеновская.<br>
+			Дата рожд. 28 декабря 1981<br>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+			$('.form-group:nth-child(1)').css('display', 'none');
+		});
+
+	</script>
+</body>
+
+</html>
